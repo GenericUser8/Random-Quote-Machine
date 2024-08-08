@@ -29,12 +29,12 @@ function App() {
     <>
       <div id="quote-box">
         <div id="text">{quote["quote"]}</div>
-        <div id="author">{quote["author"]}</div>
+        <div id="author">- {quote["author"]}</div>
         <div className="options">
           <div className="socials">
-            <a id="tweet-quote"></a>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet">Tweet</a>
           </div>
-          <button onClick={newQuote}>New Quote</button>
+          <button onClick={newQuote} id="new-quote">New Quote</button>
         </div>
       </div>
     </>
